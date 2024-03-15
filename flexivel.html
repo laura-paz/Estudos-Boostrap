@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="script.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="container">
+    <h1 class="centralizar">
+        <a class="link" href="index.html">
+            Boostrap
+        </a>
+    </h1>
+    </br>
+    <h2 class="centralizar">
+        Flexível
+    </h2>
+    </br>
+    <h3>Comportamentos flexíveis</h3>
+    <p>
+    <div class="box1 d-flex p-2">Eu sou um contêiner flexbox!</div>
+    </p>
+    <p>
+    <div class="box1 d-inline-flex p-2">Sou um contêiner flexbox inline!</div>
+    </p>
+    </br>
+    </br>
+    <h3>
+        Direção
+    </h3>
+    <p class="justificar">
+        Normalmente, você não precisa dizer explicitamente que algo está indo na horizontal, porque os navegadores
+        assumem isso por padrão. Mas em algumas situações, como quando você está fazendo um design responsivo, pode ser
+        necessário dizer que algo vai na horizontal mesmo assim.
+    </p>
+
+    <p>
+        <strong>Direção horizontal (o padrão do navegador).</strong>
+    </p>
+    <div class="d-flex flex-row mb-3 background">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+
+    <p>
+        <strong>Direção horizontal do lado oposto.</strong>
+    </p>
+    <div class="d-flex flex-row-reverse background">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+
+    <p>
+        <strong>Direção vertical.</strong>
+    </p>
+    <div class="d-flex flex-column bd-highlight mb-3 background">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+
+    <p>
+        <strong>Direção vertical do lado oposto.</strong>
+    </p>
+    <div class="d-flex flex-column-reverse bd-highlight background">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Justifique o conteúdo
+    </h3>
+    <p class="justificar">Em contêineres flexíveis, você pode alterar onde os itens vão ao longo da linha principal
+        (geralmente é a linha
+        horizontal, mas pode ser a vertical se você configurar assim). Por exemplo, você pode fazer com que os itens se
+        alinhem ao início, ao meio ou ao final da linha. Isso ajuda a organizar melhor o layout dos itens dentro do
+        contêiner flexível.</p>
+    <strong>Padrão do navegador</strong>
+    <div class="d-flex justify-content-start background">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>End</strong>
+    <div class="d-flex justify-content-end background">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Center</strong>
+    <div class="d-flex justify-content-center background">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Between</strong>
+    <div class="d-flex justify-content-between background">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Around</strong>
+    <div class="d-flex justify-content-around background">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Evelyn</strong>
+    <div class="d-flex justify-content-evenly background padrao">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Alinhar itens
+    </h3>
+    <p class="justificar">Você pode usar algumas ferramentas chamadas "align-items" em contêineres flexíveis para mudar
+        onde os itens vão
+        ao longo da direção cruzada (geralmente é a linha vertical, mas pode ser a horizontal se você configurar assim).
+        Por exemplo, você pode fazer com que os itens se alinhem no topo, no meio ou na parte inferior do contêiner.
+    </p>
+
+    <strong>Start</strong>
+    <div class="d-flex align-items-start background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>End</strong>
+    <div class="d-flex align-items-end background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Center</strong>
+    <div class="d-flex align-items-center background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Baseline</strong>
+    <div class="d-flex align-items-baseline background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Stretch</strong>
+    <div class="d-flex align-items-stretch background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Alinhar-se
+    </h3>
+    <p class="justificar">Você pode usar algumas ferramentas chamadas "align-self" em cada item dentro de um contêiner
+        flexível para mudar seu próprio alinhamento ao longo da direção cruzada (normalmente é a linha vertical, mas
+        pode ser a horizontal se você configurar assim). Por exemplo, você pode fazer com que um item se alinhe no topo,
+        no meio ou na parte inferior, independentemente de como os outros itens estão alinhados.</p>
+    <strong>Start</strong>
+    <div class="d-flex align-self-start background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight align-self-start box2">Aligned flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>End</strong>
+    <div class="d-flex align-self-end background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight align-self-end box2">Aligned flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Center</strong>
+    <div class="d-flex align-self-center background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight align-self-center box2">Aligned flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Baseline</strong>
+    <div class="d-flex background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight align-self-baseline box2">Aligned flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    <strong>Stretch</strong>
+    <div class="d-flex align-self-stretch background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight align-self-stretch box2">Aligned flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Preencher
+    </h3>
+    <p class="justificar">
+        Se você usar a classe ".flex-fill" em um grupo de elementos irmãos, eles vão ficar do mesmo tamanho,
+        largura-wise, baseado no conteúdo dentro deles. Se o conteúdo não for muito largo, eles terão a mesma largura
+        também. Eles vão ocupar todo o espaço disponível na horizontal, ou seja, vão preencher a linha toda.
+    </p>
+    <div class="d-flex bd-highlight">
+        <div class="p-2 flex-fill bd-highlight box1">Flex item with a lot of content</div>
+        <div class="p-2 flex-fill bd-highlight box2">Flex item</div>
+        <div class="p-2 flex-fill bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Crescer e encolher
+    </h3>
+    <p class="justificar">
+        Você pode usar algumas ferramentas chamadas ".flex-grow-*" para controlar o quão bem um item
+        flexível pode crescer para preencher o espaço disponível. No exemplo abaixo, os elementos com a classe
+        ".flex-grow-1" usam todo o espaço disponível que podem, enquanto ainda deixam espaço suficiente para os outros
+        dois itens flexíveis.
+    </p>
+    <div class="d-flex bd-highlight">
+        <div class="p-2 flex-grow-1 bd-highlight box1">Item flexível</div>
+        <div class="p-2 bd-highlight box2">Item flexível</div>
+        <div class="p-2 bd-highlight box3">Terceiro item flexível</div>
+    </div>
+    </br>
+    <p class="justificar">
+        Você pode usar algumas ferramentas chamadas ".flex-shrink-*" para controlar a capacidade de um item flexível
+        reduzir seu tamanho, se necessário. No exemplo abaixo, o segundo item flexível com a classe ".flex-shrink-1" é
+        forçado a agrupar seu conteúdo em uma nova linha, "encolhendo" para permitir mais espaço para o item flexível
+        anterior com a classe ".w-100".
+    </p>
+    <div class="d-flex bd-highlight">
+        <div class="p-2 w-100 bd-highlight box1">Item flexível</div>
+        <div class="p-2 flex-shrink-1 bd-highlight box2">Item flexível</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Margens automáticas
+    </h3>
+    <p class="justificar">
+        O Flexbox, quando combinado com margens automáticas, pode criar layouts incríveis e flexíveis.
+    </p>
+    <strong>Padrão (sem margens automáticas)</strong>
+    <div class="d-flex bd-highlight mb-3 background maior">
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    <strong>Empurra dois itens para a direita</strong>
+    <div class="d-flex bd-highlight mb-3 background maior">
+        <div class="me-auto p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    <strong>Empurra dois itens para a esquerda</strong>
+    <div class="d-flex bd-highlight mb-3 background maior">
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="ms-auto p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Com itens de alinhamento
+    </h3>
+    <p class="justificar">
+        Para mover verticalmente um item flexível para a parte superior ou inferior de um contêiner.
+    </p>
+    <div class="d-flex align-items-start flex-column bd-highlight mb-3 background maior" style="height: 200px;">
+        <div class="mb-auto p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+
+    <div class="d-flex align-items-end flex-column bd-highlight mb-3 background maior" style="height: 200px;">
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="mt-auto p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Enrolar
+    </h3>
+    <p class="justificar">
+        Altere a forma como os itens flexíveis são agrupados em um contêiner flexível.
+        Escolha entre não agrupar (o padrão do navegador), agrupar ou agrupar inversamente.
+    </p>
+    <strong>Não agrupar</strong>
+    <div class="d-flex flex-nowrap background maior">
+        <div class="p-2 bd-highlight flex-nowrap box1">Flex item</div>
+        <div class="p-2 bd-highlight flex-nowrap box2">Flex item</div>
+        <div class="p-2 bd-highlight flex-nowrap box3">Flex item</div>
+        <div class="p-2 bd-highlight flex-nowrap box1">Flex item</div>
+        <div class="p-2 bd-highlight flex-nowrap box2">Flex item</div>
+    </div>
+    </br>
+    <strong>Agrupar</strong>
+    <div class="d-flex flex-wrap background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+        <div class="p-2 bd-highlight box1">Flex item 4</div>
+        <div class="p-2 bd-highlight box2">Flex item 5</div>
+        <div class="p-2 bd-highlight box3">Flex item 6</div>
+        <div class="p-2 bd-highlight box1">Flex item 7</div>
+        <div class="p-2 bd-highlight box2">Flex item 8</div>
+        <div class="p-2 bd-highlight box3">Flex item 9</div>
+        <div class="p-2 bd-highlight box1">Flex item 10</div>
+        <div class="p-2 bd-highlight box2">Flex item 11</div>
+        <div class="p-2 bd-highlight box3">Flex item 12</div>
+        <div class="p-2 bd-highlight box1">Flex item 13</div>
+        <div class="p-2 bd-highlight box2">Flex item 14</div>
+        <div class="p-2 bd-highlight box3">Flex item 15</div>
+    </div>
+    </br>
+    <strong>Agrupar inversamente</strong>
+    <div class="d-flex flex-wrap-reverse background maior">
+        <div class="p-2 bd-highlight box1">Flex item 1</div>
+        <div class="p-2 bd-highlight box2">Flex item 2</div>
+        <div class="p-2 bd-highlight box3">Flex item 3</div>
+        <div class="p-2 bd-highlight box1">Flex item 4</div>
+        <div class="p-2 bd-highlight box2">Flex item 5</div>
+        <div class="p-2 bd-highlight box3">Flex item 6</div>
+        <div class="p-2 bd-highlight box1">Flex item 7</div>
+        <div class="p-2 bd-highlight box2">Flex item 8</div>
+        <div class="p-2 bd-highlight box3">Flex item 9</div>
+        <div class="p-2 bd-highlight box1">Flex item 10</div>
+        <div class="p-2 bd-highlight box2">Flex item 11</div>
+        <div class="p-2 bd-highlight box3">Flex item 12</div>
+        <div class="p-2 bd-highlight box1">Flex item 13</div>
+        <div class="p-2 bd-highlight box2">Flex item 14</div>
+        <div class="p-2 bd-highlight box3">Flex item 15</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Ordem
+    </h3>
+    <p class="justificar">
+        Altere a ordem visual de itens flexíveis específicos.
+    </p>
+    <div class="d-flex flex-nowrap bd-highlight background maior">
+        <div class="order-3 p-2 bd-highlight box3">Terceiro item flexível</div>
+        <div class="order-2 p-2 bd-highlight box2">Segundo item flexível</div>
+        <div class="order-1 p-2 bd-highlight box1">Primeiro item flexível</div>
+    </div>
+    </br>
+    </br>
+    <h3>
+        Alinhar conteúdo
+    </h3>
+    <p class="justificar">
+        Alinhar itens flexíveis no eixo cruzado.
+    </p>
+    <strong>Atenção! </strong>Esta propriedade não tem efeito em linhas únicas de itens flexíveis.
+    </br>
+    </br>
+    <div class="d-flex align-content-start flex-wrap background maior-alinha-conteudo">
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    <strong>Start</strong>
+    <div class="d-flex align-content-start flex-wrap background maior-alinha-conteudo">
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    <strong>End</strong>
+    <div class="d-flex align-content-end flex-wrap background maior-alinha-conteudo">
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    <strong>Center</strong>
+    <div class="d-flex align-content-center flex-wrap background maior-alinha-conteudo">
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    <strong>Between</strong>
+    <div class="d-flex align-content-between flex-wrap background maior-alinha-conteudo">
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    <strong>Around</strong>
+    <div class="d-flex align-content-around flex-wrap background maior-alinha-conteudo">
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+    </br>
+    <strong>Stretch</strong>
+    <div class="d-flex align-content-stretch flex-wrap background maior-alinha-conteudo">
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+        <div class="p-2 bd-highlight box1">Flex item</div>
+        <div class="p-2 bd-highlight box2">Flex item</div>
+        <div class="p-2 bd-highlight box3">Flex item</div>
+    </div>
+</br>
+</br>
+<h3>
+    Objeto de mídia
+</h3>
+<p class="justificar">
+    Este é algum conteúdo de um componente de mídia. Você pode substituí-lo por qualquer conteúdo e ajustá-lo conforme necessário.
+</p>
+<div class="d-flex">
+    <div class="flex-shrink-0">
+      <img src="https://st.depositphotos.com/2935381/4189/i/450/depositphotos_41897159-stock-photo-example-concept.jpg" alt="imagem exemplo" height="120px" width="120px">
+    </div>
+    <div class="flex-grow-1 ms-3">
+      This is some content from a media component. You can replace this with any content and adjust it as needed.
+    </div>
+  </div>
+</br>
+<p class="justificar">
+    E digamos que você queira centralizar verticalmente o conteúdo próximo à imagem:
+</p>
+<div class="d-flex align-items-center">
+    <div class="flex-shrink-0">
+      <img src="https://www.shutterstock.com/shutterstock/photos/1362869099/display_1500/stock-vector-example-stamp-vector-template-illustration-design-vector-eps-1362869099.jpg" alt="imagm exemplo 2" height="120px" width="120px">
+    </div>
+    <div class="flex-grow-1 ms-3">
+      This is some content from a media component. You can replace this with any content and adjust it as needed.
+    </div>
+  </div>
+
+</body>
+
+</html>
