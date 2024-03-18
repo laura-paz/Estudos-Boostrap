@@ -42,6 +42,11 @@ a:hover {
 
 .background {
     background-color: rgb(236, 236, 236);
+    height: 500px;
+}
+
+.margem-1 {
+    margin: 50px;    
 }
 
 .maior {
@@ -50,4 +55,8 @@ a:hover {
 
 .maior-alinha-conteudo{
     height: 200px;
+}
+
+.altura{
+    height: auto;
 }
